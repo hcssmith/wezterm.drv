@@ -2,15 +2,22 @@
   description = "A very basic flake";
 
   inputs = {
-    application-builders.url = "github:hcssmith/application-builders";
-    #application-builders.url = "git+file:///home/hcssmith/Projects/application-builders";
-    flake-lib.url = "github:hcssmith/flake-lib";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    application-builders = {
+      url = "github:hcssmith/application-builders";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    flake-lib = {
+      url = "github:hcssmith/flake-lib";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     self,
     flake-lib,
     application-builders,
+    ...
   }:
     flake-lib.lib.mkApp {
       inherit self;
