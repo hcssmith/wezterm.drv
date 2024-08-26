@@ -2,9 +2,10 @@
   description = "A very basic flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:hcssmith/nixpkgs";
     application-builders = {
       url = "github:hcssmith/application-builders";
+      #url = "git+file:///home/hcssmith/Projects/application-builders/";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-lib = {
@@ -25,7 +26,8 @@
       drv = p:
         application-builders.lib.mkWezterm {
           pkgs = p;
-          config = {};
+          config = {
+          };
         };
     };
 }

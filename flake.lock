@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1718600853,
-        "narHash": "sha256-AVeylJamSaqODdHE2sJohlZWSHTots/HidAWqBcqqGc=",
+        "lastModified": 1724702579,
+        "narHash": "sha256-PH0uwyHEiGU0V2k0LM/eeZ4zRGek+iGB5FtGs7XJkk4=",
         "owner": "hcssmith",
         "repo": "application-builders",
-        "rev": "398ddef8f4c1bf0a133c0432d71f783a7c02e19f",
+        "rev": "a4f7fbd748c84bbf86fe098955ead3ccfc701c4a",
         "type": "github"
       },
       "original": {
@@ -79,16 +79,15 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1719082008,
-        "narHash": "sha256-jHJSUH619zBQ6WdC21fFAlDxHErKVDJ5fpN0Hgx4sjs=",
-        "owner": "nixos",
+        "lastModified": 1724324868,
+        "narHash": "sha256-wTPJsZPdwahXCMctvKjcnpywMXA8zQ4PfrbW7dDgTiA=",
+        "owner": "hcssmith",
         "repo": "nixpkgs",
-        "rev": "9693852a2070b398ee123a329e68f0dab5526681",
+        "rev": "e2929b37cdb2ccf450ab100e940a1597cc28daad",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixpkgs-unstable",
+        "owner": "hcssmith",
         "repo": "nixpkgs",
         "type": "github"
       }
